@@ -16,8 +16,14 @@
 
 package net.thecodersbreakfast.lp4j.midi;
 
-import net.thecodersbreakfast.lp4j.midi.protocol.DefaultMidiProtocolClient;
-import net.thecodersbreakfast.lp4j.midi.protocol.MidiProtocolClient;
+import static org.mockito.Matchers.eq;
+import static org.mockito.Mockito.times;
+import static org.mockito.Mockito.verify;
+
+import javax.sound.midi.Receiver;
+import javax.sound.midi.ShortMessage;
+import javax.sound.midi.SysexMessage;
+
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
@@ -26,13 +32,8 @@ import org.mockito.ArgumentCaptor;
 import org.mockito.Mock;
 import org.mockito.runners.MockitoJUnitRunner;
 
-import javax.sound.midi.Receiver;
-import javax.sound.midi.ShortMessage;
-import javax.sound.midi.SysexMessage;
-
-import static org.mockito.Matchers.eq;
-import static org.mockito.Mockito.times;
-import static org.mockito.Mockito.verify;
+import net.thecodersbreakfast.lp4j.midi.protocol.DefaultMidiProtocolClient;
+import net.thecodersbreakfast.lp4j.midi.protocol.MidiProtocolClient;
 
 @RunWith(MockitoJUnitRunner.class)
 public class DefaultMidiProtocolClientTest {
