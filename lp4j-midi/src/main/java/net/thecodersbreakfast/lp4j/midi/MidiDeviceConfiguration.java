@@ -34,7 +34,7 @@ import javax.sound.midi.MidiUnavailableException;
 public class MidiDeviceConfiguration {
 
     /** Device signature of a Launchpad S, used for autodetection. */
-    public static final String DEVICE_SIGNATURE = "Launchpad S";
+    public static final String DEVICE_SIGNATURE = "Launchpad";
 
     /** Inbound communication channel. */
     private final MidiDevice inputDevice;
