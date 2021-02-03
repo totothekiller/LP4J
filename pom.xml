@@ -35,15 +35,15 @@
     </licenses>
 
     <properties>
-        <java.version>1.6</java.version>
+        <java.version>1.7</java.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 
         <lib.junit.version>4.11</lib.junit.version>
         <lib.mockito.version>1.9.5</lib.mockito.version>
 
-        <plugin.compiler.version>3.1</plugin.compiler.version>
-        <plugin.source.version>2.2.1</plugin.source.version>
-        <plugin.javadoc.version>2.9.1</plugin.javadoc.version>
+        <plugin.compiler.version>3.8.1</plugin.compiler.version>
+        <plugin.source.version>3.2.1</plugin.source.version>
+        <plugin.javadoc.version>3.2.0</plugin.javadoc.version>
     </properties>
 
     <developers>
@@ -102,23 +102,6 @@
                         </goals>
                     </execution>
                 </executions>
-            </plugin>
-            <!-- Create artifact with javadocs -->
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-javadoc-plugin</artifactId>
-                <version>${plugin.javadoc.version}</version>
-                <executions>
-                    <execution>
-                        <id>attach-javadocs</id>
-                        <goals>
-                            <goal>jar</goal>
-                        </goals>
-                    </execution>
-                </executions>
-                <configuration>
-                    <source>7</source>
-                </configuration>
             </plugin>
         </plugins>
     </build>
